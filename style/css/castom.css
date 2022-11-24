@@ -1,0 +1,11 @@
+.castom {
+   counter-reset: sectionCounter;
+}
+.paragraph {
+   counter-increment: sectionCounter;
+}
+h2::before {
+
+   content: counter(sectionCounter) " ";
+   
+   }
